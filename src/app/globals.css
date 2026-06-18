@@ -11,7 +11,7 @@
   --secondary: #4B5694; /*dark blue*/
   --accent: #7288AE; /*light blue*/
   --body-font: "Bai Jamjuree", sans-serif;
-  --background: #EAE0CF; /*cream*/ 
+  --background: #FFFAF3; /*cream*/ 
   --foreground: #111844; /*navy*/
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -46,11 +46,11 @@
 /* This block handles manual class toggles */
 .dark {
   --background: #151515;
-  --foreground: #EAE0CF;
+  --foreground: #FFFAF3;
   --card: #1b245a;
-  --card-foreground: #EAE0CF;
+  --card-foreground: #FFFAF3;
   --popover: #1b245a;
-  --popover-foreground: #EAE0CF;
+  --popover-foreground: #FFFAF3;
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
