@@ -9,10 +9,10 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
-    { href: "home", label: "Home" },
-    { href: "about", label: "About Me" },
-    { href: "projects", label: "Projects" },
-    { href: "contact", label: "Contact Me" },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About Me" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact Me" },
   ];
 
   const toggleNavbar = () => setOpen((prev) => !prev);
@@ -28,7 +28,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full backdrop-blur px-4 sm:px-6">
+    <header className="fixed top-0 w-full z-50 backdrop-blur px-4 sm:px-6">
       
       {/* TOP BAR */}
       <div className="max-w-5xl mx-auto flex items-center justify-between h-16">
@@ -74,7 +74,7 @@ export default function Header() {
 
       {/* MOBILE NAV (STRUCTURE ONLY, NO NEW STYLES ADDED) */}
       {open && (
-        <nav className="md:hidden absolute top-16 right-4 ">
+        <nav className="md:hidden absolute top-16 right-4 z-50">
           <ul className="flex flex-col gap-8 p-6 min-w-64 rounded-lg border border-foreground/90 bg-background items-center justify-center h-60">
             {navLinks.map((link) => (
               <li key={link.href}>
