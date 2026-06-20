@@ -5,7 +5,7 @@ import Photo from "./Photo";
 export default function HomeSection() {
     
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-10">
 
       <div className="
         flex flex-col lg:flex-row

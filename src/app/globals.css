@@ -2,7 +2,7 @@
 @import "tailwindcss";
 @import "remixicon/fonts/remixicon.css";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+
 
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -12,7 +12,7 @@
   --accent: #7288AE; /*light blue*/
   --body-font: "Bai Jamjuree", sans-serif;
   --background: #FFFAF3; /*cream*/ 
-  --foreground: #111844; /*navy*/
+  --foreground: #151515; /*navy*/
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -124,7 +124,6 @@
 /* Global Reset */
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 

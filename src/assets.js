@@ -18,3 +18,5 @@ export const projectData = [
     bgImage: '/talkABoo.png',
   },
 ];
+
+
