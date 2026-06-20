@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import HomeSection from "../components/HomeSection";
 import ProjectsSection from "../components/ProjectsSection";
+import AboutMeSection from "../components/AboutMeSection";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center p-4 gap-14">
         {/* Your content goes here */}
         <HomeSection/>
+        <AboutMeSection/>
         <ProjectsSection/>
+
       </main>
 
     </div>

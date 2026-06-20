@@ -27,7 +27,6 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        {/* GRID WRAPPER */}
         <div className="w-full flex justify-center px-6 sm:px-10 lg:px-16">
 
           <div className="
