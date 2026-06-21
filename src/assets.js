@@ -19,4 +19,19 @@ export const projectData = [
   },
 ];
 
+import emailjs from "@emailjs/browser";
 
+export const emailConfig = {
+  serviceId: "service_6e4ggac",
+  templateId: "template_479gqeg",
+  publicKey: "VzL3x9_Is819piKj9",
+};
+
+export async function sendContactEmail(form) {
+  return emailjs.sendForm(
+    emailConfig.serviceId,
+    emailConfig.templateId,
+    form,
+    emailConfig.publicKey
+  );
+}
