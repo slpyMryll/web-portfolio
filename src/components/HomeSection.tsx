@@ -1,6 +1,7 @@
 "use client";
 
 import Photo from "./Photo";
+import SocialLink from "./socialLink";
 
 export default function HomeSection() {
     
@@ -37,36 +38,7 @@ export default function HomeSection() {
         </div>
 
         {/* LINKS (right column) */}
-        <div className="flex flex-row lg:flex-col items-center justify-center gap-5 order-3">
-
-          <a
-            href="https://www.instagram.com/maayyyiiiiii/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 flex items-center justify-center bg-foreground duration-700"
-          >
-            <i className="ri-instagram-line text-background text-lg"></i>
-          </a>
-
-          <a
-            href="https://github.com/slpyMryll"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 flex items-center justify-center bg-foreground duration-700"
-          >
-            <i className="ri-github-line text-background text-lg"></i>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/marylle-laguna-65b25334b/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 flex items-center justify-center bg-foreground duration-700"
-          >
-            <i className="ri-linkedin-box-line text-background text-lg"></i>
-          </a>
-
-        </div>
+        <SocialLink className="flex sm:flex-col flex-row"/>
 
       </div>
     </section>
