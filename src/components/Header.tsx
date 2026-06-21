@@ -34,9 +34,15 @@ export default function Header() {
       <div className="max-w-5xl mx-auto flex items-center justify-between h-16">
 
         {/* LOGO */}
-        <Button className="sm:min-w-36 bg-background text-foreground font-bold sm:text-xl hover:bg-background cursor-pointer hover:text-foreground text-lg min-w-26">
+        <div
+          onClick={() => {
+            const home = document.querySelector("#home");
+            home?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="sm:min-w-36 text-foreground font-bold sm:text-xl hover:bg-background cursor-pointer hover:text-foreground text-lg min-w-26 flex items-center justify-center transition-colors duration-100"
+        >
           SlpyMryll
-        </Button>
+        </div>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:block">
